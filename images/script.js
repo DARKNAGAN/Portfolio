@@ -83,17 +83,3 @@ Sunburst()
 		}
     });
 }
-
-//ENTREPRISE
-gsap.registerPlugin(ScrollTrigger);
-
-const images = gsap.utils.toArray("img");
-images.forEach((img, i) => {
-  ScrollTrigger.create({
-    trigger: img,
-    toggleClass: "active",
-    start: "top 80%",
-    end: "top 8%",
-    markers: false,
-  });
-});
