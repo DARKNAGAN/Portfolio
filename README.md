@@ -23,3 +23,4 @@ Contenue principale :
   - Jikan - Unofficial MyAnimeList API
   - YouTube API
   - IGDB en attente d'intégration
+* Spotify a aussi été intégré par le passé sans résultat satisfaisant
