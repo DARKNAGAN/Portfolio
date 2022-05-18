@@ -1,6 +1,6 @@
 # Portfolio ccunatbrule
 Portfolio professionnel
-Mon Portfolio contient 5 parties contenant l'essentiel de mon profil disponible a l'adresse 
+Mon portfolio contient 5 parties contenant l'essentiel de mon profil disponible à l'adresse 
 
 http://ccunatbrule.free.fr
 
