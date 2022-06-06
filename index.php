@@ -1,8 +1,8 @@
 <?php
-	include_once('./vue/header.html');
-	include_once('./vue/projets.html');
-	include_once('./vue/cv.html');
-	include_once('./vue/services.html');
-	include_once('./vue/hobbies.html');
-	include_once('./vue/footer.html');
+	include_once('./vue/portfolio/header.html');
+	include_once('./vue/portfolio/projets.html');
+	include_once('./vue/portfolio/cv.html');
+	include_once('./vue/portfolio/entreprise.html');
+	include_once('./vue/portfolio/hobbies.html');
+	include_once('./vue/portfolio/footer.html');
 ?>

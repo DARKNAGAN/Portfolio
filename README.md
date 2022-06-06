@@ -1,5 +1,7 @@
 # Portfolio ccunatbrule
 
+NEW : Integration du site web entreprise CCB Informatique
+
 Mon portfolio contient 5 parties contenant l'essentiel de mon profil disponible à l'adresse 
 
 http://ccunatbrule.free.fr
@@ -7,11 +9,12 @@ http://ccunatbrule.free.fr
 - ACCUEIL
 - PROJETS
 - CURRICULUM VITAE
-- SERVICES
+- ENTREPRISE
 - HOBBIES
 
 Contenue principale :
 - HTML / CSS
+- PHP
 - JS
   - https://github.com/vasturiano/sunburst-chart 
   - html2canvas
