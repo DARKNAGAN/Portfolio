@@ -43,8 +43,11 @@ const data ={name: "Informatique",color:"white",children: [
 					]},
 					 {name: "Système",color:"#60A2DF",children: [
 						{name: "Linux",color:"#60A2DF",children: [
-							{name: "Bash",color:"#60A2DF",size:2}, {name: "systemd",color:"#60A2DF",size:2}, {name: "Syslinux",color:"#60A2DF",size:2}
-						]}						
+							{name: "Bash",color:"#60A2DF",size:1}, /*{name: "systemd",color:"#60A2DF",size:1},*/ {name: "Syslinux",color:"#60A2DF",size:2}
+						]},
+						{name: "Windows",color:"#60A2DF",children: [
+							{name: "AD",color:"#60A2DF",size:1}, {name: "PowerShell",color:"#60A2DF",size:2}
+						]}												
 					 ]}
 			 ]};
 //English Version : System | Network | Programming, Hardware, Connectivity, Database
