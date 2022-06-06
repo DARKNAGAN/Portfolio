@@ -9,7 +9,7 @@ h2 {
     outline-color: #0064A5;
     color: #0064A5;
     font-weight: bold;
-    margin: 5%;
+    margin: 4%;
 }
 .table{
       color: #0064A5;
@@ -45,14 +45,14 @@ section.maintenance img {
   transition: 0.5s;
 }*/
 .carousel-item img{
-    max-width: 80%;
+    max-width: 70%;
     text-align: center;
 margin: auto;
 display: flex;
 }
 
 .d-block {
-    padding-bottom: 110px;
+    padding-bottom: 90px;
 }
 
 section img.active {
@@ -255,4 +255,9 @@ a {
     color: #fff;
     background-color: #0064A5;
     border-color: #0064A5;
+}
+
+#partenaire .card img{
+    max-width: 75%;
+    align-self: center;
 }

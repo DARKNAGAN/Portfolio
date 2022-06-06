@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:2.1
+N:Cunat-Brule;Christian;;;
+FN:Christian Cunat-Brule Informatique
+ORG:CCB Informatique
+TITLE:Technicien & Developpeur Informatique
+EMAIL;TYPE=WORK:contact@cunatbrule.fr
+TEL;TYPE=WORK;VALUE=uri:(+33)7 69 93 34 05
+ADR;TYPE=WORK:;;5F Rue des deux parcs;Cerny;Essonne;91590;France
+URL;TYPE=WORK:http://ccunatbrule.free.fr/entreprise.html
+REV:20220323T195243Z
+END:VCARD
