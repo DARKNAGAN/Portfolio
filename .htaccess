@@ -1,0 +1,2 @@
+RedirectMatch permanent ^/$ http://ccunatbrule.free.fr/portfolio/
+RedirectMatch permanent ^/entreprise.html http://ccunatbrule.free.fr/entreprise/
