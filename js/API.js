@@ -242,3 +242,33 @@ ajaxGet(YTArtist, function (reponse)
 			cardtitleElt.appendChild(titleElt);
 		});
 	});
+// Genération des games API lié  à IGDB
+var gamesElt = document.getElementById("gamelist");
+ajaxGet(IGDBGame, function (reponse)
+	{
+		// Transforme la réponse en un tableau d'articles
+		const games = JSON.parse(reponse);
+		var i=0
+		games.forEach((game) =>
+		{
+			// Ajout du titre et du contenu de chaque article
+			var breakElt = document.createElement("div");breakElt.className = "w-100 d-none d-md-block";
+			var colElt = document.createElement("div");colElt.className = "col my-3";
+			var cardElt = document.createElement("div");cardElt.className = "card";
+			var cardtitleElt = document.createElement("div");cardtitleElt.className = "card-body p-2";
+			var lienElt = document.createElement("a");lienElt.href = game.url;lienElt.target = "_blank";lienElt.rel = "noopener";
+			var imageElt = document.createElement("img");imageElt.className = "card-img-top";imageElt.src = game.cover.url;imageElt.alt ="Aucun Aperçu";
+			var titleElt = document.createElement("h6");titleElt.className = "card-title";titleElt.textContent = game.name;
+			//Présentation
+			if (i==4) {
+				gamesElt.appendChild(breakElt);
+				i=1;
+			}	else{i=i+1;}
+			gamesElt.appendChild(colElt);
+			colElt.appendChild(cardElt);
+			cardElt.appendChild(lienElt);
+			lienElt.appendChild(imageElt);
+			lienElt.appendChild(cardtitleElt);
+			cardtitleElt.appendChild(titleElt);
+		});
+	});
