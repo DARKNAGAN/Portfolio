@@ -34,14 +34,14 @@ ajaxGet(MALAnime, function (reponse)
 			var cardElt = document.createElement("div");cardElt.className = "card";
 			var cardtitleElt = document.createElement("div");cardtitleElt.className = "card-body p-2";
 			var cardtextElt = document.createElement("div");cardtextElt.className = "card-body p-0";
-			var lienElt = document.createElement("a");lienElt.href = anime.url;lienElt.target = "_blank";lienElt.rel = "noopener";
-			var imageElt = document.createElement("img");imageElt.className = "card-img-top";imageElt.src = anime.image_url;imageElt.alt ="Aucun Aperçu";
-			var titleElt = document.createElement("h6");titleElt.className = "card-title";titleElt.textContent = anime.title;
+			var lienElt = document.createElement("a"); lienElt.href = anime.url; lienElt.target = "_blank";lienElt.rel = "noopener";
+			var imageElt = document.createElement("img");imageElt.className = "card-img-top"; imageElt.src = anime.image_url; imageElt.alt ="Aucun Aperçu";
+			var titleElt = document.createElement("h5");titleElt.className = "card-title text-dark"; titleElt.textContent = anime.title;
 			var infoElt = document.createElement("div");infoElt.className = "row";
 			var infotypeElt = document.createElement("div");infotypeElt.className = "col";
-			var typeElt = document.createElement("p");typeElt.className = "card-text";typeElt.innerHTML = anime.type;
+			var typeElt = document.createElement("p");typeElt.className = "card-text"; typeElt.innerHTML = anime.type;
 			var infonoteElt = document.createElement("div");infonoteElt.className = "col";
-			var noteElt = document.createElement("p");noteElt.className = "card-text";noteElt.innerHTML = anime.score+"/10";
+			var noteElt = document.createElement("p");noteElt.className = "card-text"; noteElt.innerHTML = anime.score+"/10";
 			//Présentation
 			if (i==5) {
 				animesElt.appendChild(breakElt);
@@ -71,13 +71,13 @@ ajaxGet(MALManga, function (reponse)
 		mangas.manga.forEach(function (manga) 
 		{
 			// Ajout du titre et du contenu de chaque article
-			var breakElt = document.createElement("div");breakElt.className = "w-100 d-none d-md-block";
-			var colElt = document.createElement("div");colElt.className = "col my-3";
-			var cardElt = document.createElement("div");cardElt.className = "card";
-			var cardtitleElt = document.createElement("div");cardtitleElt.className = "card-body p-2";
-			var lienElt = document.createElement("a");lienElt.href = manga.url;lienElt.target = "_blank";lienElt.rel = "noopener";
-			var imageElt = document.createElement("img");imageElt.className = "card-img-top";imageElt.src = manga.image_url;imageElt.alt ="Aucun Aperçu";
-			var titleElt = document.createElement("h6");titleElt.className = "card-title";titleElt.textContent = manga.title;
+			var breakElt = document.createElement("div"); breakElt.className = "w-100 d-none d-md-block";
+			var colElt = document.createElement("div"); colElt.className = "col my-3";
+			var cardElt = document.createElement("div"); cardElt.className = "card";
+			var cardtitleElt = document.createElement("div"); cardtitleElt.className = "card-body p-2";
+			var lienElt = document.createElement("a"); lienElt.href = manga.url; lienElt.target = "_blank"; lienElt.rel = "noopener";
+			var imageElt = document.createElement("img"); imageElt.className = "card-img-top"; imageElt.src = manga.image_url;imageElt.alt ="Aucun Aperçu";
+			var titleElt = document.createElement("h5"); titleElt.className = "card-title  text-dark"; titleElt.textContent = manga.title;
 			//Présentation
 			if (i==4) {
 				mangasElt.appendChild(breakElt);
@@ -108,19 +108,19 @@ ajaxGet(TMDBMovie+number, function (reponse)
 		bestmovies.forEach(function (results) 
 		{
 			// Ajout du titre et du contenu de chaque article
-			var breakElt = document.createElement("div");breakElt.className = "w-100 d-none d-md-block";
-			var colElt = document.createElement("div");colElt.className = "col my-3";
-			var cardElt = document.createElement("div");cardElt.className = "card";
-			var cardtitleElt = document.createElement("div");cardtitleElt.className = "card-body p-2";
-			var cardtextElt = document.createElement("div");cardtextElt.className = "card-body p-0";
-			var lienElt = document.createElement("a");lienElt.href = "//www.themoviedb.org/movie/"+results.id;lienElt.target = "_blank";lienElt.rel = "noopener";
-			var imageElt = document.createElement("img");imageElt.className = "card-img-top";imageElt.src = "https://image.tmdb.org/t/p/w150_and_h225_bestv2/" +results.poster_path;
-			var titleElt = document.createElement("h6");titleElt.className = "card-title";titleElt.textContent = results.original_title;
-			var infoElt = document.createElement("div");infoElt.className = "row";
-			var infodateElt = document.createElement("div");infodateElt.className = "col";
-			var dateElt = document.createElement("p");dateElt.className = "card-text";dateElt.innerHTML = results.release_date.slice(0,4);
-			var infonoteElt = document.createElement("div");infonoteElt.className = "col";
-			var noteElt = document.createElement("p");noteElt.className = "card-text";noteElt.innerHTML = results.rating+"/10";
+			var breakElt = document.createElement("div"); breakElt.className = "w-100 d-none d-md-block";
+			var colElt = document.createElement("div"); colElt.className = "col my-3";
+			var cardElt = document.createElement("div"); cardElt.className = "card";
+			var cardtitleElt = document.createElement("div"); cardtitleElt.className = "card-body p-2";
+			var cardtextElt = document.createElement("div"); cardtextElt.className = "card-body p-0";
+			var lienElt = document.createElement("a"); lienElt.href = "//www.themoviedb.org/movie/"+results.id; lienElt.target = "_blank";lienElt.rel = "noopener";
+			var imageElt = document.createElement("img"); imageElt.className = "card-img-top"; imageElt.src = "https://image.tmdb.org/t/p/w150_and_h225_bestv2/" +results.poster_path;
+			var titleElt = document.createElement("h5"); titleElt.className = "card-title text-dark"; titleElt.textContent = results.original_title;
+			var infoElt = document.createElement("div"); infoElt.className = "row";
+			var infodateElt = document.createElement("div"); infodateElt.className = "col";
+			var dateElt = document.createElement("p"); dateElt.className = "card-text"; dateElt.innerHTML = results.release_date.slice(0,4);
+			var infonoteElt = document.createElement("div"); infonoteElt.className = "col";
+			var noteElt = document.createElement("p"); noteElt.className = "card-text"; noteElt.innerHTML = results.rating+"/10";
 			//Présentation
 			if (i==5) {
 				moviesElt.appendChild(breakElt);
@@ -152,17 +152,17 @@ ajaxGet(TMDBSerie, function (reponse)
 		bestseries.forEach(function (results) 
 		{
 			// Ajout du titre et du contenu de chaque article
-			var breakElt = document.createElement("div");breakElt.className = "w-100 d-none d-md-block";
+			var breakElt = document.createElement("div"); breakElt.className = "w-100 d-none d-md-block";
 			var colElt = document.createElement("div");colElt.className = "col my-3";
-			var cardElt = document.createElement("div");cardElt.className = "card";
-			var cardtitleElt = document.createElement("div");cardtitleElt.className = "card-body p-2";
-			var cardtextElt = document.createElement("div");cardtextElt.className = "card-body p-0";
-			var lienElt = document.createElement("a");lienElt.href = "//www.themoviedb.org/tv/"+results.id;lienElt.target = "_blank";lienElt.rel = "noopener";
-			var imageElt = document.createElement("img");imageElt.className = "card-img-top";imageElt.src = "https://image.tmdb.org/t/p/w150_and_h225_bestv2/" +results.poster_path;
-			var titleElt = document.createElement("h6");titleElt.className = "card-title";titleElt.textContent = results.original_name;
-			var infoElt = document.createElement("div");infoElt.className = "row";
-			var infonoteElt = document.createElement("div");infonoteElt.className = "col";
-			var noteElt = document.createElement("p");noteElt.className = "card-text";noteElt.innerHTML = results.rating+"/10";
+			var cardElt = document.createElement("div"); cardElt.className = "card";
+			var cardtitleElt = document.createElement("div"); cardtitleElt.className = "card-body p-2";
+			var cardtextElt = document.createElement("div"); cardtextElt.className = "card-body p-0";
+			var lienElt = document.createElement("a"); lienElt.href = "//www.themoviedb.org/tv/" + results.id; lienElt.target = "_blank"; lienElt.rel = "noopener";
+			var imageElt = document.createElement("img"); imageElt.className = "card-img-top"; imageElt.src = "https://image.tmdb.org/t/p/w150_and_h225_bestv2/" +results.poster_path;
+			var titleElt = document.createElement("h5"); titleElt.className = "card-title text-dark"; titleElt.textContent = results.original_name;
+			var infoElt = document.createElement("div"); infoElt.className = "row";
+			var infonoteElt = document.createElement("div"); infonoteElt.className = "col";
+			var noteElt = document.createElement("p"); noteElt.className = "card-text"; noteElt.innerHTML = results.rating+"/10";
 			//Présentation
 			if (i==5) {	
 				seriesElt.appendChild(breakElt);
@@ -192,13 +192,13 @@ ajaxGet(YTPlaylist, function (reponse)
 		playlists.items.forEach(function (playlist)
 		{
 			// Ajout du titre et du contenu de chaque article
-			var breakElt = document.createElement("div");breakElt.className = "w-100 d-none d-md-block";
-			var colElt = document.createElement("div");colElt.className = "col my-3";
-			var cardElt = document.createElement("div");cardElt.className = "card m-4";
-			var cardtitleElt = document.createElement("div");cardtitleElt.className = "card-body p-2";
-			var lienElt = document.createElement("a");lienElt.href = "https://www.youtube.com/playlist?list="+playlist.id;lienElt.target = "_blank";lienElt.rel = "noopener";
-			var imageElt = document.createElement("img");imageElt.className = "card-img-top";imageElt.src = playlist.snippet.thumbnails.default.url;
-			var titleElt = document.createElement("h6");titleElt.className = "card-title";titleElt.textContent = playlist.snippet.title;
+			var breakElt = document.createElement("div"); breakElt.className = "w-100 d-none d-md-block";
+			var colElt = document.createElement("div"); colElt.className = "col my-3";
+			var cardElt = document.createElement("div"); cardElt.className = "card m-4";
+			var cardtitleElt = document.createElement("div"); cardtitleElt.className = "card-body p-2";
+			var lienElt = document.createElement("a");lienElt.href = "https://www.youtube.com/playlist?list="+playlist.id; lienElt.target = "_blank";lienElt.rel = "noopener";
+			var imageElt = document.createElement("img"); imageElt.className = "card-img-top"; imageElt.src = playlist.snippet.thumbnails.default.url;
+			var titleElt = document.createElement("h5"); titleElt.className = "card-title text-dark"; titleElt.textContent = playlist.snippet.title;
 			//Présentation
 			if (i==3) {
 				playlistsElt.appendChild(breakElt);
@@ -222,13 +222,13 @@ ajaxGet(YTArtist, function (reponse)
 		artistes.items.forEach(function (artist) 
 		{
 			// Ajout du titre et du contenu de chaque article
-			var breakElt = document.createElement("div");breakElt.className = "w-100 d-none d-md-block";
-			var colElt = document.createElement("div");colElt.className = "col my-3";
-			var cardElt = document.createElement("div");cardElt.className = "card p-3";
+			var breakElt = document.createElement("div"); breakElt.className = "w-100 d-none d-md-block";
+			var colElt = document.createElement("div"); colElt.className = "col my-3";
+			var cardElt = document.createElement("div"); cardElt.className = "card p-3";
 			var cardtitleElt = document.createElement("div");cardtitleElt.className = "card-body p-2";
-			var lienElt = document.createElement("a");lienElt.href = "https://www.youtube.com/channel/"+artist.id;lienElt.target = "_blank";lienElt.rel = "noopener";
-			var imageElt = document.createElement("img");imageElt.className = "rounded-circle border border-secondary";imageElt.src = artist.snippet.thumbnails.default.url;
-			var titleElt = document.createElement("h6");titleElt.className = "card-title";titleElt.textContent = artist.snippet.title;
+			var lienElt = document.createElement("a"); lienElt.href = "https://www.youtube.com/channel/"+artist.id; lienElt.target = "_blank"; lienElt.rel = "noopener";
+			var imageElt = document.createElement("img"); imageElt.className = "rounded-circle border border-secondary"; imageElt.src = artist.snippet.thumbnails.default.url;
+			var titleElt = document.createElement("h5"); titleElt.className = "card-title text-dark"; titleElt.textContent = artist.snippet.title;
 			//Présentation
 			if (i==3) {
 				artistesElt.appendChild(breakElt);
@@ -256,9 +256,9 @@ ajaxGet(IGDBGame, function (reponse)
 			var colElt = document.createElement("div");colElt.className = "col my-3";
 			var cardElt = document.createElement("div");cardElt.className = "card";
 			var cardtitleElt = document.createElement("div");cardtitleElt.className = "card-body p-2";
-			var lienElt = document.createElement("a");lienElt.href = game.url;lienElt.target = "_blank";lienElt.rel = "noopener";
-			var imageElt = document.createElement("img");imageElt.className = "card-img-top";imageElt.src = game.cover.url;imageElt.alt ="Aucun Aperçu";
-			var titleElt = document.createElement("h6");titleElt.className = "card-title";titleElt.textContent = game.name;
+			var lienElt = document.createElement("a"); lienElt.href = game.url; lienElt.target = "_blank"; lienElt.rel = "noopener";
+			var imageElt = document.createElement("img");imageElt.className = "card-img-top";imageElt.src = game.cover.url; imageElt.alt ="Aucun Aperçu";
+			var titleElt = document.createElement("h5");titleElt.className = "card-title text-dark"; titleElt.textContent = game.name;
 			//Présentation
 			if (i==4) {
 				gamesElt.appendChild(breakElt);
