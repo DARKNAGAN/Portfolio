@@ -4,7 +4,7 @@ NEW : Integration du site web entreprise CCB Informatique
 
 Mon portfolio contient 5 parties contenant l'essentiel de mon profil disponible à l'adresse 
 
-https://cunatbrule.fr
+https://cunatbrule.fr/portfolio
 
 - ACCUEIL
 - PROJETS
